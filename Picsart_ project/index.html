@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Untitled-1.css">
+    <script defer src="./script/Untitled-1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header__body">
+                    <h2 class="header__up">Classrooms: Beta</h2>
+                    <div class="header__down">
+                        <form action="#">
+                            <input type="search">
+                            <select name="select-input">
+                                <option value="option1">Day</option>
+                                <option value="option2">Monday</option>
+                                <option value="option1">Tuesday</option>
+                                <option value="option2">Wednesday</option>
+                                <option value="option1">Thursday</option>
+                                <option value="option2">Friday</option>
+                                <option value="option1">Saturday</option>
+                                <option value="option2">Sunday</option>
+
+                            </select>
+                            <select name="select-input">
+                                <option value="option1">Time From</option>
+                                <option value="option2">10</option>
+                                <option value="option1">11</option>
+                                <option value="option2">12</option>
+                                <option value="option1">13</option>
+                                <option value="option2">14</option>
+                                <option value="option1">15</option>
+                                <option value="option2">16</option>
+                                <option value="option1">17</option>
+                                <option value="option2">18</option>
+                                <option value="option1">19</option>
+                                <option value="option2">20</option>
+                                <option value="option1">21</option>
+                                <option value="option2">22</option>
+                            </select>
+                            <select name="select-input">
+                                <option value="option1">Time To</option>
+                                <option value="option2">10</option>
+                                <option value="option1">11</option>
+                                <option value="option2">12</option>
+                                <option value="option1">13</option>
+                                <option value="option2">14</option>
+                                <option value="option1">15</option>
+                                <option value="option2">16</option>
+                                <option value="option1">17</option>
+                                <option value="option2">18</option>
+                                <option value="option1">19</option>
+                                <option value="option2">20</option>
+                                <option value="option1">21</option>
+                                <option value="option2">22</option>
+                            </select>
+                            <input type="submit" class="button button_blue" name="" value="search">
+                            <input type="button" class="button button_green" name="" value="See Availability" onclick="toggleTable()">
+                            <input type="reset" class="button" value="Reset Filters">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="hidden-table" id="hiddentable">
+                    <button class="close-button" onclick="toggleTable()"></button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>GROUP</th>
+                                <th>CLASSROOM</th>
+                                <th>SCHEDULE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ada">
+                    <table class="ada__table table">
+                        <caption class="caption">Ada Lovelace</caption>
+                        <thead>
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <th class="firstCol">TIME</th>
+                                <th>MON</th>
+                                <th>TUE</th>
+                                <th>WED</th>
+                                <th>THU</th>
+                                <th>FRI</th>
+                                <th>SAT</th>
+                                <th>SUN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">10:00</td>
+                                <td>
+                                    <div class="das das_cp">CP1</div>
+                                    <div class="dasaxos">Hayk Darbinyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_cp">CP4</div>
+                                    <div class="dasaxos">Hayk Darbinyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_design">Design Wave 1/ G1</div>
+                                    <div class="table-cell__dasaxos">Samvel Hovsepyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_cp">CP1</div>
+                                    <div class="dasaxos">Hayk Darbinyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_cp">CP4</div>
+                                    <div class="dasaxos">Hayk Darbinyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_design">Design Wave 1/ G1</div>
+                                    <div class="dasaxos">Samvel Hovsepyan</div>
+                                </td>
+                                <td>
+                                    <div class="das das_UI">UI/UX Beginners</div>
+                                    <div class="dasaxos">Samvel Hovsepyan</div>
+                                </td>
+                            </tr>  
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">10:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">11:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">11:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">12:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">12:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">13:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">13:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">14:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">14:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">15:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">15:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">16:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">16:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">17:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">17:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">18:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">18:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">19:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">19:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">20:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">20:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">21:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">21:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">22:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                            <tr onmouseover="style.backgroundColor = 'gray'" onmouseout="style.backgroundColor = 'white'">
+                                <td class="firstCol">22:30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+        /* border: 0; */
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+} 
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* -------------------header------------------------------------------- */
+
+.header {
+    margin: 30px 0 20px 0;
+}
+.header__body {
+    
+}
+.header__up{
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.header__down {
+}
+input{
+    font-size: 16px;
+}
+input.button{
+    border: 0;
+    height: 35px;
+    padding: 0 15px 0 15px;
+}
+input.button{
+    cursor: pointer;
+}
+input.button_blue{
+    background-color: rgb(9, 76, 138);
+    border-radius: 5px;
+    color: white;
+}
+input.button_blue:hover{
+    background-color: rgb(56, 145, 228);
+}
+input.button_green{
+    background-color: rgb(9, 138, 41);
+    border-radius: 5px;
+    color: white;
+}
+input.button_green:hover{
+    background-color: rgb(35, 190, 74);
+}
+
+
+
+.caption{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  thead{
+    background-color: #adaaaa42;
+  }
+  td{
+  }
+  caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .firstCol{
+    width: 40px;
+  }
+
+.das{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.das_cp{
+    background-color: #d44531;
+}
+.das_design{
+    background-color: #e8eb32;
+}
+.das_UI{
+    background-color: #c56255;
+}
+
+.dasaxos {
+    font-size: 14px;
+    color: #adabab;
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .hidden-table {
+    margin: 50px 0 30px 0;
+    display: none;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #cc0d0d;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .close-button::before,
+  .close-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .close-button:hover {
+    background-color: #740606;
+  }
+  
