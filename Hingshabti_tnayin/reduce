@@ -1,0 +1,9 @@
+function reduce(arr,callback,initial){
+    let accumulator = initial === undefined?arr[0]:initial;
+    for(let i = initial === undefined?1:0; i < arr.length; i++){
+        if(arr.hasOwnProperty(i)){
+            accumulator = callback(accumulator,arr[i],i,arr);
+        }
+    }
+    return accumulator;
+}

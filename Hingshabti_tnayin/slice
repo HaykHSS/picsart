@@ -1,0 +1,27 @@
+function slice(arr,start,end){
+    let newArr = [];
+    if(start === undefined && end === undefined){
+        for(let i = 0;i < arr.length;i++){
+            newArr.push(arr[i]);
+        }
+        return newArr;
+    }
+    if(start === undefined){
+        for(let i = 0; i < end; i++){
+            newArr.push(arr[i])
+        }
+        return newArr;
+    }
+    if(end === undefined){
+        for(let i = start; i < arr.length; i++){
+            newArr.push(arr[i])
+        }
+        return newArr;
+    }
+    let startIndex = start < 0?Math.max(start+ arr.length,0):start;
+    let endIndex = end < 0?Math.max(end + arr.length,0):end;
+    for(let i = startIndex; i < arr.length && i < endIndex; i++){
+        newArr.push(arr[i]);
+    }
+    return newArr;
+}
