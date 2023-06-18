@@ -1,0 +1,12 @@
+function With(arr,index,value){
+    let arr2 = [];
+    let index2 = index === undefined ? 0: index < 0 ? Math.max(index + arr.length,0) : index;
+    for(let i = 0; i < arr.length;i++){
+        if(i === index2){
+            arr2.push(value);
+            continue;
+        }
+        arr2.push(arr[i]);
+    }
+    return arr2;
+}

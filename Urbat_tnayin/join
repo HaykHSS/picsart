@@ -1,0 +1,8 @@
+function join(arr,separator){
+    let separator2 = separator === undefined ? "," : separator;
+    let str = "";
+    for(let i = 0;i < arr.length; i++){
+        str = i === arr.length - 1 ? (str + arr[i]) : (str + arr[i] + separator2); 
+    }
+    return str;
+}

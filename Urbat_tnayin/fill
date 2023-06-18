@@ -1,0 +1,8 @@
+function fill(arr,value,start,end){
+    let start2 = start === undefined ? 0 : start < 0 ? Math.max(start + arr.length, 0): start;
+    let end2 = (end >= arr.length || end === undefined) ? arr.length : end < 0 ? Math.max(end + arr.length, 0) : end;
+    for(let i = start2; i < end2;i++){
+        arr[i] = value;
+    }
+    return arr;
+ }

@@ -1,0 +1,19 @@
+function splice (arr,start,count,...args){
+    let count2 = count < 0 ? 0 : count;
+    let start2 = start < 0 ? Math.max(start + arr.length,0) : start;
+    let arr2 = [];
+    let newArr = [];
+    for(let i = start2; i < start2 + count2;i++){
+        newArr.push(arr[i]);
+    }
+    for(let i = 0; i < start2; i++){
+        arr2.push(arr[i]);
+    }
+    arr2.push(...args);
+    for(let i = start2 + count2; i < arr.length;i++){
+        arr2.push(arr[i]);
+    }
+    arr.length = 0;
+    arr.push(...arr2);
+    return newArr;
+}
