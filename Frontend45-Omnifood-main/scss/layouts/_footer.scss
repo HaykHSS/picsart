@@ -1,0 +1,65 @@
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  &__container {
+    max-width: 120rem;
+    gap: 6.4rem;
+    display: flex;
+  }
+  &__logo {
+    max-width: 22rem;
+    & img {
+      margin-bottom: 3.2rem;
+    }
+    &__socials {
+      display: flex;
+      gap: 2.4rem;
+    }
+    & p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: #767676;
+      margin-top: auto;
+    }
+  }
+  &__contacts {
+    max-width: 22rem;
+    &__contact {
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+    &__address {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__nav {
+  }
+  &__heading {
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__link {
+    line-height: 1.6;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      color: #555;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+    }
+  }
+  &__nav .footer__link {
+    line-height: 1;
+  }
+}

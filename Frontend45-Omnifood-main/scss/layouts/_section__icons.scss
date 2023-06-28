@@ -1,0 +1,21 @@
+.section__icons {
+  padding-bottom: 9.6rem;
+}
+.icons {
+  max-width: 120rem;
+  display: flex;
+  gap: 6.4rem;
+  &__icon {
+    & img {
+      margin-bottom: 3.2rem;
+    }
+    & h4 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 1.6rem;
+    }
+    & p {
+      line-height: 1.8;
+    }
+  }
+}

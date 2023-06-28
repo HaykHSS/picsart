@@ -1,0 +1,86 @@
+.section__pricing {
+  padding: 9.6rem;
+}
+.pricing {
+  max-width: 120rem;
+  &__header {
+  }
+  &__body {
+    margin-bottom: 4.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 6.4rem;
+    &__base {
+      border-radius: 11px;
+      width: 35.4%;
+      padding: 4.6rem;
+      & h4 {
+        text-align: center;
+        color: #cf711f;
+        font-weight: 600;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 3.2rem;
+      }
+      & h3 {
+        text-align: center;
+        font-size: 6.2rem;
+        font-weight: 600;
+        margin-bottom: 1.6rem;
+        & span {
+          font-size: 3rem;
+          font-weight: 500;
+          margin-right: 0.8rem;
+        }
+      }
+      & p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: #6f6f6f;
+        margin-bottom: 4.8rem;
+      }
+      & ul {
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+        & li {
+          line-height: 1.2;
+          font-weight: 400;
+        }
+      }
+    }
+    &__starter {
+      border: 2px solid #fdf2e9;
+    }
+    &__complete {
+      overflow: hidden;
+      position: relative;
+      background-color: #fdf2e9;
+      &::after {
+        content: "Best value";
+        position: absolute;
+        top: 6%;
+        right: -18%;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #333;
+        background-color: #ffd43b;
+        padding: 0.8rem 8rem;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &__footer {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.button__container {
+  text-align: center;
+  & a {
+    margin: 0;
+  }
+}
